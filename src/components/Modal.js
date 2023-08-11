@@ -9,7 +9,7 @@ const Modal = () => {
         <br />
         <h3>Modal Content </h3>
         <br />
-        <p>This is the modal content</p>
+        <p>This is the modal content.</p>
     </>
   )
 }
