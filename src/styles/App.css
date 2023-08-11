@@ -2,20 +2,19 @@
 *{
     margin: 0;
 }
-.parentCls{
+.parent{
     background-color: blueviolet;
     padding: 10px;
 }
 
-.childCls{
+.child{
     margin-top: 20px;
     background-color: brown;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+
 }
 
 button{
+    margin-top: 20px;
     width: fit-content;
 }
 

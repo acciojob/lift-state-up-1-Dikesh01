@@ -1,24 +1,25 @@
 
 import React, { useState } from "react";
+import Modal from "./Modal";
 import './../styles/App.css';
 
+
 const App = () => {
-  const [content, setContent] = useState("")
-  const [para, setPara] = useState("")
+  const [content, setContent] = useState(false)
+  // const [para, setPara] = useState("")
 
   function showModal() {
-    setContent("Modal Content")
-    setPara("This is the modal content")
+    setContent(!content)
+    // setPara("This is the modal content")
   }
   return (
-    <div className="parentCls">
+    <div className="parent">
         {/* Do not remove the main div */}
         <h1>Parent Component</h1>
-        <div className="childCls">
+        <div className="child">
             <h2>Child Component</h2>
             <button onClick={showModal}>Show Modal</button>
-            <h3>{content}</h3>
-            <p>{para}</p>
+            { content && <Modal />}
         </div>
     </div>
   )
